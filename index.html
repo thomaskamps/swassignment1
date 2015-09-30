@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Semantic Web Application of Thomas Kamps</title>
+		<script src="static/js/jquery-1.11.0.min.js" type='text/javascript'></script>
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<div class='row'>
+				<div class='col-lg-12'>
+					<h1>Welcome to my Semantic Web Application</h1>
+					<p>This application is built by Thomas Kamps as an assignment for the Semantic Web course taught at the VU. The main goal of this application is to provide the user with information on a variety of pizzas. Unfortunately the language of the used ontology are in Portugese, but the message is usually understandable. The used ontology is an example ontology that contains all constructs required for the various versions of the Pizza Tutorial run by Manchester University (see http://www.co-ode.org/resources/tutorials/). After you have selected a pizza you will see the used toppings, and get the choice for showing the categories it belongs to with or without inferencing on the ontology. The different results you get can be explained by the fact that in the ontology categories are defined classes and so contain sufficient conditions. So a reasoner will put pizzas that meet those conditions under the defined class. Select your pizza of choice and see the magic:</p>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-lg-6'>
+					<h3>Select your pizza:</h3>
+					<p>
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Choose your pizza
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="pizza-select">
+							</ul>
+						</div>
+					</p>
+					
+				</div>
+				<div class="col-lg-6">
+					<h3><span id="selected_pizza">Your selected pizza</span> has the following toppings:</h3>
+					<div class="well" id="pizza-toppings">No pizza selected..</div>
+				</div>
+			</div>
+		</div>
+	<script src="static/js/scripts.js" type='text/javascript'></script>
+	</body>
+</html>
